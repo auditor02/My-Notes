@@ -10,7 +10,9 @@ let add = document.getElementById("add");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     formValidation();
-    window.onload = function () {}
+    window.onload = function () {
+      
+    }
   });
   
   let formValidation = () => {
@@ -23,7 +25,6 @@ form.addEventListener("submit", (e) => {
       msg.innerHTML = "";
 
       acceptData();
-
       add.setAttribute("data-bs-dismiss", "modal");
       add.click();
 
@@ -70,12 +71,10 @@ form.addEventListener("submit", (e) => {
       });
 
  resetForm();
-
- let resetForm = () => {
+  }
+  
+  let resetForm = () => {
     textInput.value = "";
     dateInput.value = "";
     textarea.value = "";
-  };
   }
-  
-  
